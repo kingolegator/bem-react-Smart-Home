@@ -1,0 +1,76 @@
+.Navigation {
+    position: relative;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    width: 95%;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.Navigation_position_fixed {
+    /* position: fixed !important; */
+}
+
+.Navigation-Block { 
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-direction: row;
+}
+
+
+.Navigation-Logo {
+    float: left;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.Navigation-Logo > img {
+    display: block;
+}
+
+.Navigation-Collapse {
+    display: inherit;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+/* dsd */
+
+.Navigation-List .Navigation-Item {
+    float: left;
+}
+
+.Navigation-Link {
+    display: block;
+    padding: .425rem 1rem;
+	font-weight: bold;
+    font-size: 16px;
+    opacity : 0.6
+}
+.Navigation-Link:hover {
+    opacity : 1
+}
+
+.Navigation-List .Navigation-Link + .Navigation-Link {
+    margin-left: 1rem;
+}
+
+.Navigation-List .Navigation-Item + .Navigation-Item {
+    margin-left: 1rem;
+}

@@ -1,0 +1,24 @@
+.Card {
+    background-color: #FAFAFA;
+    position: relative;
+    border-radius: 20px;
+    margin: 10px 15px;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+.Card_size_m {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.Card-Header {
+    /* margin-top: 10px; */
+    display: flex;
+    align-content: center;
+    /* margin-bottom: -3%; */
+}
+
+.Card-Content {
+    
+}

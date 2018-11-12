@@ -1,0 +1,15 @@
+.MainPanel {
+  margin: 0px 40px;
+  height: 100vh;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333333;
+  text-align: left;
+  font-size: calc(14px + (26 - 16) * ((100vw - 300px)/(2680-300)));
+}

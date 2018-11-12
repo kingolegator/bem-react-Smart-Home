@@ -1,0 +1,22 @@
+.Content {
+    width: 80%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.Content-Main-Feed {
+    margin-left: 20px;
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.Content-Grid-Container {
+    display: grid;
+    height: 100%;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(6, 16%);
+    grid-auto-rows: auto;
+    grid-gap: .6rem;
+}
