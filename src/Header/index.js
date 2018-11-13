@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import iconList from "./icon_list.svg";
 import "./Header.css";
 import { cn } from "@bem-react/classname";
 import Navigation from "../Navigation";

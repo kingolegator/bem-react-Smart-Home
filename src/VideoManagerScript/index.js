@@ -2,7 +2,6 @@ import Hls from "hls.js";
 
 import { cn } from "@bem-react/classname";
 
-debugger;
 const cnCard = cn("Card");
 
 export default function getVideoMonitoring() {
@@ -112,6 +111,8 @@ export default function getVideoMonitoring() {
                         else {
                             videoEl.style.filter = `${type}(${val})`;
                         }
+                        break;
+                    default:
                         break;
                 }
             }
@@ -256,4 +257,3 @@ export default function getVideoMonitoring() {
         },
     };
 }
-// getVideoMonitoring();

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Footer.css";
 import { cn } from "@bem-react/classname";
 import Link from "../Link";
+import License from "./license.pdf";
 
 const cnFooter = cn("Footer");
 
@@ -23,7 +24,7 @@ class Footer extends Component {
                         <Link className={cnFooter("Link")} href="#" title="Условия использования"/>
                     </li>
                     <li className={cnFooter("Item")}>
-                        <Link className={cnFooter("Link")} href="public/data/license.pdf" title="Авторские права"/>
+                        <Link className={cnFooter("Link")} href={License} title="Авторские права"/>
                     </li>
                 </ul>
                 <p className={cnFooter("Copy")}>© 2001-2017 ООО "Яндекс"</p>

@@ -14,7 +14,7 @@ class Feed extends Component {
         return (
             <div className={cnContent()}>
                 <h1 className={cnContent("MainHeader")}>Видеонаблюдение</h1>
-                <div className={cnContent("Grid-Container")}>
+                <div className={cnContent("GridContainer")}>
                     <Card size="m" className={cnContent()} number="1"></Card>
                     <Card size="m" className={cnContent()} number="2"></Card>
                     <Card size="m" className={cnContent()} number="3"></Card>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Header from './Header';
 import { cn } from "@bem-react/classname";
 

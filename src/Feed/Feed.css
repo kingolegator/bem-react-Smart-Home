@@ -12,7 +12,7 @@
     color: #333333;
 }
 
-.Feed-Grid-Container {
+.Feed-GridContainer {
     display: grid;
     height: 100%;
     grid-auto-flow: dense;

@@ -30,6 +30,6 @@
     padding-bottom: 20px;
 }
 
-.Card-FullPage .VideoControl-VolumeGraphLabel, .full-page btn .btn-default {
+.Card-FullPage .VideoControl-VolumeGraphLabel {
     display: block;
 }
