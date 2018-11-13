@@ -9,7 +9,7 @@ const cnCard = cn("Card");
 class Card extends Component {
     render() {
         return (
-            <div className={cnCard({ size: this.props.size })} id={`box-${this.props.number}`}>
+            <div className={cnCard({ size: this.props.size }, [this.props.type])} id={`box-${this.props.number}`}>
                 <div className={cnCard("Header")}>
                     <p>Камера {this.props.number}</p>
                 </div>

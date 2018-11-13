@@ -37,18 +37,18 @@
     100% {transform: scale(1); }
 }
 
-#box-1 {
+.Box.Box_horizontal_left.Box_vertical_top {
     transform-origin: left top;   
 }
 
-#box-2 {
+.Box.Box_horizontal_right.Box_vertical_top {
     transform-origin: right top;   
 }
 
-#box-3 {
+.Box.Box_horizontal_left.Box_vertical_bottom {
     transform-origin: left bottom;   
 }
 
-#box-4 {
+.Box.Box_horizontal_right.Box_vertical_bottom {
     transform-origin: right bottom;   
 }

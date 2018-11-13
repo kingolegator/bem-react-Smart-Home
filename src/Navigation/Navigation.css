@@ -27,7 +27,6 @@
     -ms-flex-direction: row;
 }
 
-
 .Navigation-Logo {
     float: left;
     padding-top: 0.25rem;
@@ -61,7 +60,8 @@
     font-size: 16px;
     opacity : 0.6
 }
-.Navigation-Link:hover {
+
+.Navigation-Link :hover {
     opacity : 1
 }
 

@@ -92,6 +92,7 @@ export default function getVideoMonitoring() {
         },
         changeVideoFilter(videoEl, val, type) {
             if (videoEl && videoEl.style && videoEl.style.filter !== null) {
+                // eslint-disable-next-line no-useless-escape
                 const previousValue = videoEl.style.filter.match(/\w+-?[\d+\.]*/g);
                 switch (type) {
                     case "brightness":
@@ -143,7 +144,7 @@ export default function getVideoMonitoring() {
                     if (this.video1) {
                         this.changeVideoFilter(this.video1, tg.value, "brightness");
                     }
-                }).bind(this);
+                });
             }
             if (brightness2) {
                 brightness2.oninput = ((e) => {
@@ -151,7 +152,7 @@ export default function getVideoMonitoring() {
                     if (this.video2) {
                         this.changeVideoFilter(this.video2, tg.value, "brightness");
                     }
-                }).bind(this);
+                });
             }
             if (brightness3) {
                 brightness3.oninput = ((e) => {
@@ -159,7 +160,7 @@ export default function getVideoMonitoring() {
                     if (this.video3) {
                         this.changeVideoFilter(this.video3, tg.value, "brightness");
                     }
-                }).bind(this);
+                });
             }
             if (brightness4) {
                 brightness4.oninput = ((e) => {
@@ -167,9 +168,10 @@ export default function getVideoMonitoring() {
                     if (this.video4) {
                         this.changeVideoFilter(this.video4, tg.value, "brightness");
                     }
-                }).bind(this);
+                });
             }
             //#endregion
+
             //#region contrastRangeEvents
             if (contrast1) {
                 contrast1.oninput = ((e) => {
@@ -177,7 +179,7 @@ export default function getVideoMonitoring() {
                     if (this.video1) {
                         this.changeVideoFilter(this.video1, tg.value, "contrast");
                     }
-                }).bind(this);
+                });
             }
             if (contrast2) {
                 contrast2.oninput = ((e) => {
@@ -185,7 +187,7 @@ export default function getVideoMonitoring() {
                     if (this.video2) {
                         this.changeVideoFilter(this.video2, tg.value, "contrast");
                     }
-                }).bind(this);
+                });
             }
             if (contrast3) {
                 contrast3.oninput = ((e) => {
@@ -193,7 +195,7 @@ export default function getVideoMonitoring() {
                     if (this.video3) {
                         this.changeVideoFilter(this.video3, tg.value, "contrast");
                     }
-                }).bind(this);
+                });
             }
             if (contrast4) {
                 contrast4.oninput = ((e) => {
@@ -201,28 +203,29 @@ export default function getVideoMonitoring() {
                     if (this.video4) {
                         this.changeVideoFilter(this.video4, tg.value, "contrast");
                     }
-                }).bind(this);
+                });
             }
             //#endregion
+            
             if (this.video1) {
                 this.video1.onclick = ((e) => {
                     this.videoClick(this.boxes[0], e.target, "#volume-graph-1");
-                }).bind(this);
+                });
             }
             if (this.video2) {
                 this.video2.onclick = ((e) => {
                     this.videoClick(this.boxes[1], e.target, "#volume-graph-2");
-                }).bind(this);
+                });
             }
             if (this.video3) {
                 this.video3.onclick = ((e) => {
                     this.videoClick(this.boxes[2], e.target, "#volume-graph-3");
-                }).bind(this);
+                });
             }
             if (this.video4) {
                 this.video4.onclick = ((e) => {
                     this.videoClick(this.boxes[3], e.target, "#volume-graph-4");
-                }).bind(this);
+                });
             }
         },
         init() {

@@ -4,7 +4,8 @@ import { cn } from "@bem-react/classname";
 import Card from "../Card";
 import VideoManager from "../VideoManagerScript/index";
 
-const cnContent = cn("Feed");
+const cnFeed = cn("Feed");
+const cnBox = cn("Box");
 
 class Feed extends Component {
     componentDidMount() {
@@ -12,13 +13,13 @@ class Feed extends Component {
     }
     render() {
         return (
-            <div className={cnContent()}>
-                <h1 className={cnContent("MainHeader")}>Видеонаблюдение</h1>
-                <div className={cnContent("GridContainer")}>
-                    <Card size="m" className={cnContent()} number="1"></Card>
-                    <Card size="m" className={cnContent()} number="2"></Card>
-                    <Card size="m" className={cnContent()} number="3"></Card>
-                    <Card size="m" className={cnContent()} number="4"></Card>
+            <div className={cnFeed()}>
+                <h1 className={cnFeed("MainHeader")}>Видеонаблюдение</h1>
+                <div className={cnFeed("GridContainer")}>
+                    <Card size="m" className={cnFeed()} number="1" type={cnBox({horizontal: "left", vertical: "top"})}></Card>
+                    <Card size="m" className={cnFeed()} number="2" type={cnBox({horizontal: "right", vertical: "top"})}></Card>
+                    <Card size="m" className={cnFeed()} number="3" type={cnBox({horizontal: "left", vertical: "bottom"})}></Card>
+                    <Card size="m" className={cnFeed()} number="4" type={cnBox({horizontal: "right", vertical: "bottom"})}></Card>
                 </div>
             </div>
         );
