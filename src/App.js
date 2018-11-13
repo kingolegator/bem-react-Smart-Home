@@ -5,7 +5,7 @@ import { cn } from "@bem-react/classname";
 
 import './App.css';
 import Footer from './Footer';
-import Content from './Content';
+import Feed from './Feed';
 
 const cnMainPanel = cn('MainPanel');
 
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className={cnMainPanel()}>
         <Header />
-        <Content />
+        <Feed />
         <Footer />
       </div>
     );

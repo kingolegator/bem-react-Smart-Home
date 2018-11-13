@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './Navigation.css';
+import React, { Component } from "react";
+import "./Navigation.css";
 import { cn } from "@bem-react/classname";
-import logo from './logo.png';
+import logo from "./logo.png";
 import Link from "../Link";
 
 const cnNavigation = cn("Navigation");
@@ -9,7 +9,7 @@ const cnNavigation = cn("Navigation");
 class Navigation extends Component {
     render() {
         return (
-            <div className={cnNavigation({position: 'fixed'})}>
+            <div className={cnNavigation({position: "fixed"})}>
                 <div className={cnNavigation("Block")}>
                     <div className={cnNavigation("Logo")}><img src={logo} alt="Яндекс Дом"></img></div>
                     <nav className={cnNavigation("Collapse")}>

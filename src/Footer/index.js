@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Footer.css';
+import React, { Component } from "react";
+import "./Footer.css";
 import { cn } from "@bem-react/classname";
 import Link from "../Link";
 

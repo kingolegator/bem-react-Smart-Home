@@ -1,0 +1,35 @@
+.VideoControl {
+    width: 100%;
+    font-size: 0.6rem;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.VideoControl input {
+    max-width: 20%
+}
+
+.VideoControl-VideoRange {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.VideoControl-VolumeVideo, .VideoControl-VolumeGraphLabel {
+    display: none;
+}
+
+.Card-FullPage .VideoControl-VolumeVideo {
+    display: block;
+    width: 20%;
+    height: 40%;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+
+.Card-FullPage .VideoControl-VolumeGraphLabel, .full-page btn .btn-default {
+    display: block;
+}

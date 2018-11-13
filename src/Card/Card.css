@@ -7,6 +7,12 @@
     padding-right: 20px;
 }
 
+.Card:hover {
+    background: #F3F3F3;
+    box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+    cursor: pointer;
+}
+
 .Card_size_m {
     grid-column: span 3;
     grid-row: span 2;
@@ -20,5 +26,32 @@
 }
 
 .Card-Content {
-    
+}
+
+@keyframes zoomScale {
+    0% {transform: scale(0.5);}
+    50% {transform: scale(0.75);}
+    100% {transform: scale(1); }
+}
+
+@keyframes unZoomScale {
+    0% {transform: scale(2);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1); }
+}
+
+#box-1 {
+    transform-origin: left top;   
+}
+
+#box-2 {
+    transform-origin: right top;   
+}
+
+#box-3 {
+    transform-origin: left bottom;   
+}
+
+#box-4 {
+    transform-origin: right bottom;   
 }

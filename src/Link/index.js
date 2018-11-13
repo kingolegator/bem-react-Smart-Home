@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Link.css';
+import React, { Component } from "react";
+import "./Link.css";
 import { cn } from "@bem-react/classname";
 
 const cnLink = cn("Link");
